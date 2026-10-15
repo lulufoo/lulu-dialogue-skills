@@ -24,11 +24,14 @@ boundaries, or pursue one Goal.
 
 - Route to a sub-SKILL and follow that file.
 - Do **not** invent delivery stages or document sources of truth here.
-- Sub-SKILLs are **manual-trigger** by default (see each sub-SKILL). Exceptions:
-  `explain` may self-activate per its Activation; `verify` may be proposed by the
-  assistant and runs only after the user agrees; other sub-SKILLs stay manual.
-  This orchestrator dispatches other keys only when the user names a key or an
-  unambiguous intent.
+- Each sub-SKILL's Activation states its own start rule. `converge`, `walk`,
+  `grill`, and `verify` start only on the user's request or agreement; the
+  assistant may ask for agreement. The other seven also start when their own
+  condition holds.
+- At most one sub-SKILL starts on the assistant's own initiative per reply (a
+  proposal counts); a proposal the user declined is not repeated.
+- This orchestrator routes only when the user names a key or an unambiguous
+  intent; self-start conditions live in each sub-SKILL.
 
 ## Sub-SKILL Routing
 

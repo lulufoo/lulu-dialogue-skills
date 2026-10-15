@@ -2,9 +2,9 @@
 name: sample
 description: >-
   Lead with one concrete instance instead of abstract description; ground it in
-  project evidence when the question touches implementation. MANUAL ONLY —
-  never self-activate. Triggers: `/sample` or an explicit request for a sample.
-  Use when: /sample, sample, 举例, 给个样例, 样例, 给个例子.
+  project evidence when the question touches implementation. Starts on
+  `/sample` or an explicit request for a sample, or when the user asks what
+  something looks like or how it is shaped. Use when: /sample, sample, 举例, 给个样例, 样例, 给个例子.
 argument-hint: "<Object or Question>"
 ---
 
@@ -28,7 +28,7 @@ Decide per question whether the instance needs project evidence.
 
 1. Judge whether the question touches project implementation: code, schema, interface, data shape, or file layout.
 2. Lean toward grounding; when in doubt, ground.
-3. Calling `/sample` is the user's explicit request to apply `/ground`; follow [ground/SKILL.md](../ground/SKILL.md) for Evidence and Result.
+3. Grounding follows [ground/SKILL.md](../ground/SKILL.md) for Evidence and Result.
 4. Grounded: take values from evidence. A value evidence cannot supply is marked unknown.
 5. Not grounded (pure concept, no project object): the instance is illustrative; mark every invented value.
 6. Grounding keeps `/ground` boundaries: conversation-only and read-only.
@@ -55,10 +55,9 @@ If `/ground` is also invoked: its rules govern evidence; `sample` owns the insta
 
 ## Activation
 
-Manual only.
-
-1. `/sample`, 举例, 给个样例, 样例, 给个例子, or an explicit request for a concrete instance.
-2. No self-activation.
+Starts on the user's request (`/sample`, 举例, 给个样例, 样例, 给个例子, or an
+explicit request for a concrete instance), or when the user asks what something
+looks like or how it is shaped.
 
 ## Done
 

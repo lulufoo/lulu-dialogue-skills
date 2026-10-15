@@ -6,7 +6,8 @@ description: >-
   user understand how things currently work, and — when it exists — surfaces
   the gap/contradiction between that status quo and the user's expectation.
   Does not assume the expectation is correct, invent friction, decide for the
-  user, or persist findings. MANUAL TRIGGER ONLY. Use when: /clash, 碰撞,
+  user, or persist findings. Starts when the user presses a view, question, or
+  expectation against a named target. Use when: /clash, 碰撞,
   clash, 戳一下这个, 撬一下方案, stress-test this, probe this decision.
 ---
 
@@ -38,7 +39,7 @@ their expectation.
 
 ## Principles
 
-1. **Manual only** — 仅手动触发；无用户 probe 不自启.
+1. **User probe only** — 仅在用户对某个命名对象提出观点、问题或预期时启动；助手不主动审计.
 2. **No invented friction** — 不编造摩擦；只陈述可核实的事实，及（若有）差距与矛盾.
 3. **Expose over conclude** — 暴露优先于代用户下结论；不裁定「谁对」.
 4. **Offer readings, don't decide** — 存在多读法/取舍时并列给出，不替用户做决定.
@@ -47,10 +48,10 @@ their expectation.
 
 ## Activation
 
-- **Manual only.** User names a target and poses a challenge/question against it
-  (`/clash`, 碰撞, or an explicit request to clash/stress-test).
-- **Never self-activate.**
-- Default one round; continue only while the user keeps probing.
+1. Starts when the user names a target and poses a view, question, claim, or
+   expectation against it (`/clash`, 碰撞, or an explicit request to
+   clash/stress-test). The assistant does not audit on its own.
+2. Default one round; continue only while the user keeps probing.
 
 ## Pipeline
 

@@ -2,8 +2,9 @@
 name: ground
 description: >-
   Make one implementation-related question concrete through fresh project
-  evidence or an explicit proposed implementation shape. MANUAL ONLY. Use when:
-  /ground, 实现接地, 强制接地, 太虚, 代码层面, 当前实现, 目标实现,
+  evidence or an explicit proposed implementation shape. Starts on request, or
+  when a material claim about project implementation would rest on dialogue or
+  recollection instead of fresh evidence. Use when: /ground, 实现接地, 强制接地, 太虚, 代码层面, 当前实现, 目标实现,
   改完是什么样.
 argument-hint: "<Question>"
 ---
@@ -46,9 +47,10 @@ Answer the user's question directly; structure follows the evidence.
 
 ## Activation
 
-Manual only: `/ground <Question>`, 太虚, 强制接地, or an explicit request
-to ground one implementation question. Do not self-activate from ordinary
-design discussion.
+Starts on the user's request (`/ground <Question>`, 太虚, 强制接地, or an
+explicit request to ground one implementation question), or when a material
+claim about project implementation would rest on dialogue or recollection
+instead of fresh evidence.
 
 ## Done
 
