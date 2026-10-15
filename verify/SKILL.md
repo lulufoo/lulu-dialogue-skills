@@ -2,9 +2,10 @@
 name: verify
 description: >-
   Settle one load-bearing inference through an authoritative source or a
-  hands-on check; a claim neither can settle stays marked as inference. Manual
-  via /verify; the assistant may propose it and runs it only after the user
-  agrees. Use when: /verify, 验证一下, 验证这个判断, 求证.
+  hands-on check; a claim neither can settle stays marked as inference. Starts
+  only on the user's explicit request or agreement; the assistant may ask for
+  agreement when a load-bearing claim is only inferred. Use when: /verify,
+  验证一下, 验证这个判断, 求证.
 argument-hint: "<Claim>"
 ---
 
@@ -42,26 +43,17 @@ basis.
    hands-on check was available (a check the user declined is unavailable), and
    what would settle it. Reachable only after both were attempted.
 
-## Consent
-
-The user's agreement bounds what runs.
-
-1. User invocation covers checks without lasting side effects.
-2. The assistant may propose `/verify` when a claim is load-bearing and only
-   inferred; the proposal lets the user judge what will happen before agreeing.
-   Agreement covers what the proposal named.
-3. A check leaves no lasting side effect — project files, external state,
-   deletion, spending, scratch files — beyond what the user agreed to.
-
 ## Activation
 
-Manual, or propose.
+A run starts only on the user's explicit request or agreement; without either,
+the claim stays marked as inference.
 
-1. **Manual:** `/verify <Claim>`, 验证一下, 求证, or an explicit request to verify
-   one claim.
-2. **Propose:** a claim is load-bearing (a later conclusion, decision, or action
-   rests on it) and only inferred. Run only after the user agrees; without
-   agreement the claim stays marked as inference.
+1. The assistant may ask for agreement when a claim is load-bearing (a later
+   conclusion, decision, or action rests on it) and only inferred; the ask lets
+   the user judge what will happen.
+2. A check leaves no lasting side effect — project files, external state,
+   deletion, spending, scratch files — unless the user's request or agreement
+   named it.
 
 ## Done
 
