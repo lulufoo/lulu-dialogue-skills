@@ -3,8 +3,9 @@ name: converge
 description: >-
   Walk a disposition queue one question at a time (confirm / fork / resolve /
   dispose / unclassified). Each turn shows type, i/n, options, and lean; no
-  advance until answered; ends with a decision table and exit gate. MANUAL
-  ONLY. Use when: /converge, 逐题收敛, 收敛, 逐个问题, one question at a time,
+  advance until answered; ends with a decision table and exit gate. Starts only
+  on the user's explicit request or agreement; the assistant may ask for
+  agreement when several open choices are pending. Use when: /converge, 逐题收敛, 收敛, 逐个问题, one question at a time,
   option walk, disposition queue.
 ---
 
@@ -21,8 +22,9 @@ next; finish with a table and exit gate.
 
 ## Activation
 
-- **Manual only** (`/converge`, `逐题收敛`, or explicit one-by-one option walk).
-- **Never self-activate.**
+- A run starts only on the user's explicit request (`/converge`, `逐题收敛`, or
+  an explicit one-by-one option walk) or agreement. The assistant may ask for
+  agreement when several open choices are pending.
 - Runs until queue done, user aborts, or user says stop.
 
 ## Queue

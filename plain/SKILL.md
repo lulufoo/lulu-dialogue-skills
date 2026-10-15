@@ -3,9 +3,8 @@ name: plain
 description: >-
   Make the current point followable by a first-time project inheritor who
   has no prior context; keep key project terms defined and attached.
-  MANUAL ONLY — never self-activate. Triggers: `/plain` or an explicit
-  first-time / 说人话 request. MAY recommend on re-ask, confusion, or rejected
-  framing — ask first; activate only after agreement. Use when: /plain,
+  Starts on `/plain` or an explicit first-time / 说人话 request, or when the
+  user re-asks, shows confusion, or rejects the framing. Use when: /plain,
   说人话, 白话, 初次接手, first-time inheritor.
 ---
 
@@ -37,6 +36,12 @@ Constraints on the live reply.
 3. Do not rephrase the same pair across paragraphs.
 4. The reply must stand alone.
 5. End with one confirmation question (e.g. "Does this land?").
+
+## Activation
+
+Starts on the user's request (`/plain`, 说人话, 白话, or an explicit first-time
+request), or when the user re-asks the same question, shows confusion, or
+rejects the framing as unclear.
 
 ## Out of scope
 

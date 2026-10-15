@@ -3,7 +3,8 @@ name: grill
 description: >-
   Pursue one user-given Goal through focused, one-at-a-time questions until the
   Goal is achieved, objectively blocked, or the user stops. Conversation-only;
-  never self-activates or invents a separate completion contract. Use when:
+  starts only on the user's explicit request or agreement and invents no
+  separate completion contract. Use when:
   /grill, grill this, 追问到底, 持续追问, 围绕这个目标问清楚.
 argument-hint: "<Goal>"
 ---
@@ -15,9 +16,10 @@ blocked by unavailable information, or aborted by the user.
 
 ## Activation
 
-1. Activate on `/grill` or an unambiguous request for sustained questioning
-   toward one Goal.
-2. Never self-activate from a merely unclear or incomplete conversation.
+1. A run starts only on the user's explicit request (`/grill` or an unambiguous
+   request for sustained questioning toward one Goal) or agreement.
+2. The assistant may ask for agreement only when the user has stated a Goal; a
+   merely unclear or incomplete conversation is not one.
 3. Missing Goal → ask for it and stop. Ambiguous Goal → ask one focused
    clarification; continue only when the Goal is restatable.
 

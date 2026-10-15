@@ -3,11 +3,9 @@ name: gist
 description: >-
   On-demand gist mode: lead with one glanceable bottom line, then optional short
   support. Compresses expression density for causes, proposals, and concepts —
-  does not deepen reasoning. MANUAL TRIGGER ONLY — never self-activate. User
-  triggers with `/gist` (or an explicit request for the gist / 要点 / 一眼抓住).
-  The assistant MAY recommend triggering it when the reply is long or the user
-  asks to compress — but must ask first and only activate after the user agrees.
-  Use when: /gist, gist, 要点, 一眼抓住, 结论先行, bottom line up front, BLUF.
+  does not deepen reasoning. Starts on `/gist` or an explicit request for the
+  gist / 要点 / 一眼抓住, or when a start signal appears (compress request, long
+  natural answer, reply rejected as too long). Use when: /gist, gist, 要点, 一眼抓住, 结论先行, bottom line up front, BLUF.
 ---
 
 # gist
@@ -39,12 +37,10 @@ If `/plain` is also on: `gist` owns structure (bottom line first); `plain` owns 
 
 ## Activation
 
-- **Manual:** `/gist`, 要点, 一眼抓住, or an explicit request for the gist / BLUF.
-- **Recommend-only:** when a trigger signal appears (below), the assistant may add
-  one line — "Want me to switch to `/gist`?" — and MUST wait for user confirmation.
-- **Never self-activate.** Absent explicit user go-ahead, this mode stays off.
+Starts on the user's request (`/gist`, 要点, 一眼抓住, or an explicit request for
+the gist / BLUF), or when a start signal appears.
 
-### Recommend signals (suggest, do not apply)
+### Start signals
 
 1. User asks to compress, summarize to the point, or "一眼抓住".
 2. The natural answer would be long while the user needs a skim-first read.

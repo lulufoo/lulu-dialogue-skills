@@ -5,7 +5,8 @@ description: >-
   carve out what is out of scope this round, collapse one axis, split now vs
   later, or refuse a dangling delivery dependency — so the remaining problem
   becomes workable. One cut per turn; does not solve the domain problem, run a
-  converge queue, or persist. MANUAL TRIGGER ONLY. Use when: /cut, cut, 砍一刀,
+  converge queue, or persist. Starts on request, or when the user is stuck on a
+  problem too large or tangled to start. Use when: /cut, cut, 砍一刀,
   boundary surgery, narrow the scope, lock this premise, carve out.
 ---
 
@@ -46,8 +47,8 @@ solution.
 
 ## Principles
 
-1. **Manual only** — activate only on `/cut`, 砍一刀, or an explicit cut request;
-   never self-activate.
+1. **Confirmed cuts only** — starting `cut` never changes the boundary; a cut
+   takes effect only after the user confirms it (see 2).
 2. **One cut per turn** — propose and confirm exactly one cut per turn; queue
    further cuts.
 3. **Cut changes the boundary** — every cut must yield a citable boundary-change
@@ -73,9 +74,9 @@ solution.
 
 ## Activation
 
-- **Manual only** (`/cut`, `cut`, 砍一刀, or an explicit request for boundary
-  surgery / scope cut).
-- **Never self-activate.**
+- Starts on the user's request (`/cut`, `cut`, 砍一刀, or an explicit request
+  for boundary surgery / scope cut), or when the user is stuck on a problem too
+  large or tangled to start.
 - Default: one cut per turn; continue only if the user asks for another cut or
   confirms the next queued cut.
 

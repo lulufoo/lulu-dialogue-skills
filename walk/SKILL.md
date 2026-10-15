@@ -2,7 +2,9 @@
 name: walk
 description: >-
   Walk one named object as a confirmed node list, one node per turn, until the
-  list is done or the user stops. Use when: /walk, walk, 逐题讲解, 带着我按图听.
+  list is done or the user stops. Starts only on the user's explicit request or
+  agreement; the assistant may ask for agreement when one named object is too
+  large to hold in one reply. Use when: /walk, walk, 逐题讲解, 带着我按图听.
 ---
 
 # walk
@@ -47,6 +49,11 @@ A finer list under the current node.
 1. `descend` inserts a short finer list under the current node.
 2. Confirm it, walk it, then resume the parent list after the current node.
 3. Do not replace the parent list.
+
+## Activation
+
+A run starts only on the user's explicit request or agreement. The assistant may
+ask for agreement when one named object is too large to hold in one reply.
 
 ## Done
 

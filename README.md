@@ -4,7 +4,7 @@
 
 <h1 align="center">Lulu Dialogue Skills</h1>
 
-<p align="center"><b>On-demand dialogue modes. You name the move. The reply changes how the conversation runs.</b></p>
+<p align="center"><b>On-demand dialogue modes. You name the move, or the assistant starts one when it fits. The reply changes how the conversation runs.</b></p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
