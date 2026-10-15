@@ -20,6 +20,7 @@ An [Agent Skills](https://agentskills.io) pack for conversation. It owns how thi
 | `/gist` | Bottom line first |
 | `/explain` | Smallest explanation of one object, then stop |
 | `/ground` | Pin a vague reply to inspectable implementation evidence |
+| `/sample` | Show one concrete instance first, grounded when it touches the implementation |
 | `/walk` | Walk a confirmed node list, one node per turn |
 | `/grill` | Pursue one Goal with focused questions |
 | `/clash` | Press your expectation against the status quo |
