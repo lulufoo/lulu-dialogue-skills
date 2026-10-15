@@ -21,6 +21,7 @@ An [Agent Skills](https://agentskills.io) pack for conversation. It owns how thi
 | `/explain` | Smallest explanation of one object, then stop |
 | `/ground` | Pin a vague reply to inspectable implementation evidence |
 | `/sample` | Show one concrete instance first, grounded when it touches the implementation |
+| `/verify` | Settle one inferred claim by authoritative source or hands-on check |
 | `/walk` | Walk a confirmed node list, one node per turn |
 | `/grill` | Pursue one Goal with focused questions |
 | `/clash` | Press your expectation against the status quo |
