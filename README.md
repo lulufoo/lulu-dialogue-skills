@@ -19,6 +19,7 @@ An [Agent Skills](https://agentskills.io) pack for conversation. It owns how thi
 | `/plain` | Say it so a first-time inheritor can follow |
 | `/gist` | Bottom line first |
 | `/explain` | Smallest explanation of one object, then stop |
+| `/ste` | Say it in ASD-STE100 controlled form; dictionary for English only |
 | `/ground` | Pin a vague reply to inspectable implementation evidence |
 | `/sample` | Show one concrete instance first, grounded when it touches the implementation |
 | `/verify` | Settle one inferred claim by authoritative source or hands-on check |
